@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HEART DISEASE DETECTION</title>
+</head>
+<body>
+<div>
+		<h1> <strong>HEART DISEASE DETECTION  </strong></h1>
+	</div>
+	<form>
+  <label for="age">Age</label><br>
+  <input type="number" id="age" name="age"><br>
+
+  <label for="sex">Sex</label><br>
+  <input type="number" id="sex" name="sex"><br>
+
+  <label for="">Chest Pain Type</label><br>
+  <input type="number" id="cp" name="cp"><br>
+
+  <label for="trest">T REST</label><br>
+  <input type="number" id="trest" name="trest"><br>
+
+  <label for="rest">REST</label><br>
+  <input type="number" id="rest" name="rest"><br>
+
+  <label for="thal">THAL</label><br>
+  <input type="number" id="thal" name="thal"><br>
+
+  <label for="exag">Exercise Induced Angina</label><br>
+  <input type="number" id="exag" name="exag"><br>
+
+  <label for="oldpeak"> ST depression induced by exercise relative to rest</label><br>
+  <input type="number" id="oldpeak" name="oldpeak"><br>
+
+  <label for="slope">The slope of the peak exercise ST segment</label><br>
+  <input type="number" id="slope" name="slope"><br>
+
+  <label for="ca">ca</label><br>
+  <input type="number" id="ca" name="ca"><br>
+
+   <label for="tha">tha</label><br>
+  <input type="number" id="tha" name="tha"><br>
+  
+
+</form><br><br>
+
+<button type="submit" form="form9" value="Submit">Predict</button>
+</body>
+</html>

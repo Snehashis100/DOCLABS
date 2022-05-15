@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Doku.css">
+<head>
+	
+	<title></title>
+</head>
+<body>
+	<!-- header -->
+	<div>
+		<h1> <strong> Disease Detection </strong></h1>
+	</div>
+
+	<!-- Main-->
+	<ul type="list">	
+	<li>
+		<h4><a href="BreastCancer.html"> Breast Cancer</a></h4>
+	</li>
+
+	<li>
+		<h4><a href="Diabetes.html"> Diabetes</a></h4>
+	</li>
+
+	<li>
+		<h4><a href="Kidney.html"> Kidney Disease</a></h4>
+	</li>
+
+	<li>
+		<h4><a href="Liver.html"> Liver Disease</a></h4>
+	</li>
+
+	<li>
+		<h4><a href="Covid19.html"> Covid 19</a></h4>
+	</li>
+
+	<li>
+		<h4><a href="Heart.html"> Heart Disease</a></h4>
+	</li>
+	
+
+
+	</ul>
+
+
+</body>
+</html>

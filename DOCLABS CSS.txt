@@ -1,0 +1,7 @@
+body{
+	text-align: left;
+	align-content: center;
+}
+ul{
+    list-style-type: none;
+}
