@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HEART DISEASE DETECTION</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div>
-    <h1> <strong>HEART DISEASE DETECTION </strong></h1>
+  <div id="header">
+    <h1>HEART DISEASE DETECTION</h1>
   </div>
-  <form>
-    <label for="age">Age</label><br>
-    <input type="number" id="age" name="age" min="0" max="2^32 -1"><br>
+  <form id="heartForm">
+    <div id="ageDiv">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="0" max="2^32 -1">
+    </div>
 
-    <label for="sex">Sex</label><br>
-    <!-- <input type="number" id="sex" name="sex"><br> -->
-    <select>
-      <option value="1"> Male
-      </option>
-      <option value="0"> Female
-      </option>
-    </select><br>
+    <div id="sexDiv">
+      <label for="sex">Sex</label>
+      <!-- <input type="number" id="sex" name="sex"><br> -->
+      <select>
+        <option value="1"> Male
+        </option>
+        <option value="0"> Female
+        </option>
+      </select>
+    </div>
 
-    <label for="cp">Chest Pain Type</label><br>
-    <!-- <input type="number" id="cp" name="cp"><br> -->
+    <div id="cpDiv">
+      <label for="cp">Chest Pain Type</label>
+      <!-- <input type="number" id="cp" name="cp"><br> -->
+      <select>
+        <option value="1"> Typical Angina
+        </option>
+        <option value="2"> Atypical Angina
+        </option>
+        <option value="3"> Non-Anginal Pain
+        </option>
+        <option value="4"> Asymptomatic
+        </option>
+      </select>
+    </div>
 
-    <select>
-      <option value="1"> Typical Angina
-      </option>
-      <option value="2"> Atypical Angina
-      </option>
-      <option value="3"> Non-Anginal Pain
-      </option>
-      <option value="4"> Asymptomatic
-      </option>
-    </select><br>
+    <div id="trestDiv">
+      <label for="trest">T REST</label>
+      <input type="number" id="trest" name="trest" min="0" max="2^32 -1">
+    </div>
 
-    <label for="trest">T REST</label><br>
-    <input type="number" id="trest" name="trest" min="0" max="2^32 -1"><br>
+    <div id="restDiv">
+      <label for="rest">REST</label>
+      <input type="number" id="rest" name="rest" min="0" max="2^32 -1">
+    </div>
 
-    <label for="rest">REST</label><br>
-    <input type="number" id="rest" name="rest" min="0" max="2^32 -1"><br>
-
-    <label for="thal">THAL</label><br>
-    <input type="number" id="thal" name="thal" min="0" max="2^32 -1"><br>
+    <div id="thalDiv">
+      <label for="thal">THAL</label>
+      <input type="number" id="thal" name="thal" min="0" max="2^32 -1">
+    </div>
     <!-- <select>
       <option value="0"> Normal
       </option>
@@ -53,50 +68,60 @@
       </option>
     </select><br> -->
 
-    <label for="exag">Exercise Induced Angina</label><br>
-    <!-- <input type="number" id="exag" name="exag"><br> -->
-    <select>
-      <option value="0"> No
-      </option>
-      <option value="1"> Yes
-      </option>
-    </select><br>
+    <div id="exagDiv">
+      <label for="exag">Exercise Induced Angina</label>
+      <!-- <input type="number" id="exag" name="exag"><br> -->
+      <select>
+        <option value="0"> No
+        </option>
+        <option value="1"> Yes
+        </option>
+      </select>
+    </div>
 
-    <label for="oldpeak"> ST depression induced by exercise relative to rest</label><br>
-    <input type="number" id="oldpeak" name="oldpeak" min="0" max="2^32 -1"><br>
+    <div id="oldpeakDiv">
+      <label for="oldpeak"> ST depression induced by exercise relative to rest</label>
+      <input type="number" id="oldpeak" name="oldpeak" min="0" max="2^32 -1">
+    </div>
 
-    <label for="slope">The slope of the peak exercise ST segment</label><br>
-    <!-- <input type="number" id="slope" name="slope"><br> -->
-    
-    <select>
-      <option value="1"> Upsloping
-      </option>
-      <option value="2"> Flat
-      </option>
-      <option value="3"> Downsloping
-      </option>
-    </select><br>
+    <div id="slopeDiv">
+      <label for="slope">The slope of the peak exercise ST segment</label>
+      <!-- <input type="number" id="slope" name="slope"><br> -->
+      <select>
+        <option value="1"> Upsloping
+        </option>
+        <option value="2"> Flat
+        </option>
+        <option value="3"> Downsloping
+        </option>
+      </select>
+    </div>
 
-    <label for="ca">number of major vessels colored by flourosopy</label><br>
-    <!-- <input type="number" id="ca" name="ca"><br> -->
-    <select>
-      <option value="0"> 0
-      </option>
-      <option value="1"> 1
-      </option>
-      <option value="2"> 2
-      </option>
-      <option value="3"> 3
-      </option>
-    </select><br>
+    <div id="caDiv">
+      <label for="ca">number of major vessels colored by flourosopy</label>
+      <!-- <input type="number" id="ca" name="ca"><br> -->
+      <select>
+        <option value="0"> 0
+        </option>
+        <option value="1"> 1
+        </option>
+        <option value="2"> 2
+        </option>
+        <option value="3"> 3
+        </option>
+      </select>
+    </div>
 
-    <label for="tha">THA</label><br>
-    <input type="number" id="tha" name="tha" min="0" max="2^32 -1"><br>
+    <div id="thaDiv">
+      <label for="tha">THA</label>
+      <input type="number" id="tha" name="tha" min="0" max="2^32 -1">
+    </div>
 
+  </form>
 
-  </form><br><br>
-
-  <button type="submit" form="form3" value="Submit">Predict</button>
+  <div id="BtnDiv">
+    <button id="submitBtn" type="submit" form="form3" value="Submit">Predict</button>
+  </div>
 </body>
 
 </html>

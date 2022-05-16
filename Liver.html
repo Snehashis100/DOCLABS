@@ -1,40 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>LIVER DISEASE DETECTION</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liver Disease</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<div>
-		<h1> <strong>LIVER DISEASE DETECTION  </strong></h1>
-	</div>
-	<form>
-  <label for="Age">Age</label><br>
-  <input type="number" id="Age" name="Age" min="0" max="2^32 -1"><br>
 
-  <label for="Total_Bil">Total Bilirubin</label><br>
-  <input type="number" id="Total_Bil" name="Total_Bil" min="0" max="2^32 -1"><br>
+  <div id="header">
+    <h1>LIVER DISEASE</h1>
+  </div>
 
-  <label for="Direct_Bil">Direct Bilirubin  </label><br>
-  <input type="number" id="Direct_Bil" name="Direct_Bil" min="0" max="2^32 -1"> <br>
+  <form id="liverForm">
+    <div id="ageDiv">
+      <label for="Age">Age</label>
+      <input type="number" id="Age" name="Age" min="0" max="2^32 -1">
+    </div>
 
-  <label for="Alb">Albumin </label><br>
-  <input type="number" id="Alb" name="Alb" min="0" max="2^32 -1"><br>
+    <div id="biliDiv">
+      <label for="Total_Bil">Total Bilirubin</label>
+      <input type="number" id="Total_Bil" name="Total_Bil" min="0" max="2^32 -1">
+    </div>
 
-  <label for="Alb_Glo_Ratio">Albumin and Globulin Ratio</label><br>
-  <input type="number" id="Alb_Glo_Ratio" name="Alb_Glo_Ratio" min="0" max="2^32 -1"><br>
+    <div id="directBilDiv">
+      <label for="Direct_Bil">Direct Bilirubin</label>
+      <input type="number" id="Direct_Bil" name="Direct_Bil" min="0" max="2^32 -1">
+    </div>
 
-  <label for="Alk_Phosp">Alkaline Phosphotase</label><br>
-  <input type="number" id="Alk_Phosp" name="Alk_Phosp" min="0" max="2^32 -1"><br>
+    <div id="albDiv">
+      <label for="Alb">Albumin </label>
+      <input type="number" id="Alb" name="Alb" min="0" max="2^32 -1">
+    </div>
 
-  <label for="Alam_Amino">Alamine Aminotransferase </label><br>
-  <input type="number" id="Alam_Amino" name="Alam_Amino" min="0" max="2^32 -1"><br>
+    <div id="albGloDiv">
+      <label for="Alb_Glo_Ratio">Albumin and Globulin Ratio</label>
+      <input type="number" id="Alb_Glo_Ratio" name="Alb_Glo_Ratio" min="0" max="2^32 -1">
+    </div>
 
-  <label for="Asp_Amino">Aspartate Aminotransferase </label><br>
-  <input type="number" id="Asp_Amino" name="Asp_Amino" min="0" max="2^32 -1"><br>
+    <div id="alkDiv">
+      <label for="Alk_Phosp">Alkaline Phosphotase</label>
+      <input type="number" id="Alk_Phosp" name="Alk_Phosp" min="0" max="2^32 -1">
+    </div>
 
+    <div id="alamDiv">
+      <label for="Alam_Amino">Alamine Aminotransferase </label>
+      <input type="number" id="Alam_Amino" name="Alam_Amino" min="0" max="2^32 -1">
+    </div>
 
-</form><br><br>
+    <div id="aspDiv">
+      <label for="Asp_Amino">Aspartate Aminotransferase </label>
+      <input type="number" id="Asp_Amino" name="Asp_Amino" min="0" max="2^32 -1">
+    </div>
+  </form>
 
-<button type="submit" form="gorm9" value="Submit">Predict</button>
+  <div id="BtnDiv">
+    <button id="submitBtn" type="submit" form="gorm9" value="Submit">Predict</button>
+  </div>
 </body>
+
 </html>
