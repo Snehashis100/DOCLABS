@@ -1,49 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>HEART DISEASE DETECTION</title>
+  <title>HEART DISEASE DETECTION</title>
 </head>
+
 <body>
-<div>
-		<h1> <strong>HEART DISEASE DETECTION  </strong></h1>
-	</div>
-	<form>
-  <label for="age">Age</label><br>
-  <input type="number" id="age" name="age"><br>
+  <div>
+    <h1> <strong>HEART DISEASE DETECTION </strong></h1>
+  </div>
+  <form>
+    <label for="age">Age</label><br>
+    <input type="number" id="age" name="age" min="0" max="2^32 -1"><br>
 
-  <label for="sex">Sex</label><br>
-  <input type="number" id="sex" name="sex"><br>
+    <label for="sex">Sex</label><br>
+    <!-- <input type="number" id="sex" name="sex"><br> -->
+    <select>
+      <option value="1"> Male
+      </option>
+      <option value="0"> Female
+      </option>
+    </select><br>
 
-  <label for="">Chest Pain Type</label><br>
-  <input type="number" id="cp" name="cp"><br>
+    <label for="cp">Chest Pain Type</label><br>
+    <!-- <input type="number" id="cp" name="cp"><br> -->
 
-  <label for="trest">T REST</label><br>
-  <input type="number" id="trest" name="trest"><br>
+    <select>
+      <option value="1"> Typical Angina
+      </option>
+      <option value="2"> Atypical Angina
+      </option>
+      <option value="3"> Non-Anginal Pain
+      </option>
+      <option value="4"> Asymptomatic
+      </option>
+    </select><br>
 
-  <label for="rest">REST</label><br>
-  <input type="number" id="rest" name="rest"><br>
+    <label for="trest">T REST</label><br>
+    <input type="number" id="trest" name="trest" min="0" max="2^32 -1"><br>
 
-  <label for="thal">THAL</label><br>
-  <input type="number" id="thal" name="thal"><br>
+    <label for="rest">REST</label><br>
+    <input type="number" id="rest" name="rest" min="0" max="2^32 -1"><br>
 
-  <label for="exag">Exercise Induced Angina</label><br>
-  <input type="number" id="exag" name="exag"><br>
+    <label for="thal">THAL</label><br>
+    <input type="number" id="thal" name="thal" min="0" max="2^32 -1"><br>
+    <!-- <select>
+      <option value="0"> Normal
+      </option>
+      <option value="1"> Fixed Defect
+      </option>
+      <option value="2"> Reversable Defect
+      </option>
+    </select><br> -->
 
-  <label for="oldpeak"> ST depression induced by exercise relative to rest</label><br>
-  <input type="number" id="oldpeak" name="oldpeak"><br>
+    <label for="exag">Exercise Induced Angina</label><br>
+    <!-- <input type="number" id="exag" name="exag"><br> -->
+    <select>
+      <option value="0"> No
+      </option>
+      <option value="1"> Yes
+      </option>
+    </select><br>
 
-  <label for="slope">The slope of the peak exercise ST segment</label><br>
-  <input type="number" id="slope" name="slope"><br>
+    <label for="oldpeak"> ST depression induced by exercise relative to rest</label><br>
+    <input type="number" id="oldpeak" name="oldpeak" min="0" max="2^32 -1"><br>
 
-  <label for="ca">ca</label><br>
-  <input type="number" id="ca" name="ca"><br>
+    <label for="slope">The slope of the peak exercise ST segment</label><br>
+    <!-- <input type="number" id="slope" name="slope"><br> -->
+    
+    <select>
+      <option value="1"> Upsloping
+      </option>
+      <option value="2"> Flat
+      </option>
+      <option value="3"> Downsloping
+      </option>
+    </select><br>
 
-   <label for="tha">tha</label><br>
-  <input type="number" id="tha" name="tha"><br>
-  
+    <label for="ca">number of major vessels colored by flourosopy</label><br>
+    <!-- <input type="number" id="ca" name="ca"><br> -->
+    <select>
+      <option value="0"> 0
+      </option>
+      <option value="1"> 1
+      </option>
+      <option value="2"> 2
+      </option>
+      <option value="3"> 3
+      </option>
+    </select><br>
 
-</form><br><br>
+    <label for="tha">THA</label><br>
+    <input type="number" id="tha" name="tha" min="0" max="2^32 -1"><br>
 
-<button type="submit" form="form3" value="Submit">Predict</button>
+
+  </form><br><br>
+
+  <button type="submit" form="form3" value="Submit">Predict</button>
 </body>
+
 </html>
