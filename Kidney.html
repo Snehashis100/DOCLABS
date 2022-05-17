@@ -1,128 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>KIDNEY DISEASE DETECTION</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>KIDNEY DISEASE DETECTION </title>
 </head>
 
 <body>
-  <div>
-    <h1> <strong>KIDNEY DISEASE DETECTION </strong></h1>
+  <div id="header">
+    <h1>KIDNEY DISEASE DETECTION</h1>
   </div>
-  <form>
-    <label for="rbc">Red Blood Cells</label><br>
-    <select name="rbc" id="rbc">
-      <option value="normal">normal</option>
-      <option value="abnormal">abnormal</option>
-    </select><br>
+
+  <form id="kidneyForm">
+
+    <div id="rbcDiv">
+      <label for="rbc">Red Blood Cells</label>
+      <select name="rbc" id="rbc">
+        <option value="normal">normal</option>
+        <option value="abnormal">abnormal</option>
+      </select>
+    </div>
+
+    <div id="pcDiv">
+      <label for="pc">Pus Cells</label>
+      <select name="pc" id="pc">
+        <option value="normal">normal</option>
+        <option value="abnormal">abnormal</option>
+      </select>
+    </div>
+
+    <div id="pccDiv">
+      <label for="pcc">Puss Cell Clumps</label>
+      <select name="pcc" id="pcc">
+        <option value="present">present</option>
+        <option value="notpresent">notpresent</option>
+      </select>
+    </div>
+
+    <div id="baDiv">
+      <label for="ba">Bacteria</label>
+      <select name="ba" id="ba">
+        <option value="present">present</option>
+        <option value="notpresent">notpresent</option>
+      </select>
+    </div>
+
+    <div id="htnDiv">
+      <label for="htn">Hypertension</label>
+      <select name="htn" id="htn">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </div>
+
+    <div id="dmDiv">
+      <label for="dm">Diabetes Mellitus</label>
+      <select name="dm" id="dm">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </div>
+
+    <div id="cadDiv">
+      <label for="cad">Coronary Artery Disease</label>
+      <select name="cad" id="cad">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </div>
+
+    <div id="appetDiv">
+      <label for="appet">Appetite</label>
+      <select name="appet" id="appet">
+        <option value="good">good</option>
+        <option value="poor">poor</option>
+      </select>
+    </div>
+
+    <div id="peDiv">
+      <label for="pe">Pedal Edema</label>
+      <select name="pe" id="pe">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </div>
+
+    <div id="aneDiv">
+      <label for="ane">Anemia</label>
+      <select name="ane" id="ane">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </div>
+
+    <div id="rcDiv">
+      <label for="rc">Red Blood Cell Count</label>
+      <input type="number" id="rc" name="rc" min="0" max="2^32 -1">
+    </div>
+
+    <div id="wcDiv">
+      <label for="wc">White Blood Cell Count</label>
+      <input type="number" id="age" name="age" min="0" max="2^32 -1">
+    </div>
 
 
-    <label for="pc">Pus Cells</label><br>
-    <select name="pc" id="pc">
-      <option value="normal">normal</option>
-      <option value="abnormal">abnormal</option>
-    </select><br>
+    <div id="bpDiv">
+      <label for="bp">Blood Pressure</label>
+      <input type="number" id="bp" name="bp" min="0" max="2^32 -1">
+    </div>
 
-    <label for="pcc">Puss Cell Clumps</label><br>
-    <select name="pcc" id="pcc">
-      <option value="present">present</option>
-      <option value="notpresent">notpresent</option>
-    </select><br>
+    <div id="sgDiv">
+      <label for="sg">Specific Gravity</label>
+      <select name="sg" id="sg">
+        <option value="1.005">1.005</option>
+        <option value="1.010">1.010</option>
+        <option value="1.015">1.015</option>
+        <option value="1.020">1.020</option>
+        <option value="1.025">1.025</option>
+      </select>
+    </div>
 
-    <label for="ba">Bacteria</label><br>
-    <select name="ba" id="ba">
-      <option value="present">present</option>
-      <option value="notpresent">notpresent</option>
-    </select><br>
+    <div id="alDiv">
+      <label for="al">Albumin</label>
+      <input type="number" id="al" name="al" min="0" max="2^32 -1">
+    </div>
 
-    <label for="htn">Hypertension</label><br>
-    <select name="htn" id="htn">
-      <option value="yes">yes</option>
-      <option value="no">no</option>
-    </select><br>
+    <div id="suDiv">
+      <label for="su">Sugar</label>
+      <input type="number" id="su" name="su" min="0" max="2^32 -1">
+    </div>
 
-    <label for="dm">Diabetes Mellitus</label><br>
-    <select name="dm" id="dm">
-      <option value="yes">yes</option>
-      <option value="no">no</option>
-    </select><br>
+    <div id="ageDiv">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="0" max="2^32 -1">
+    </div>
 
-    <label for="cad">Coronary Artery Disease</label><br>
-    <select name="cad" id="cad">
-      <option value="yes">yes</option>
-      <option value="no">no</option>
-    </select><br>
+    <div id="bgrDiv">
+      <label for="bgr">Blood Glucose Random</label>
+      <input type="number" id="bgr" name="bgr" min="0" max="2^32 -1">
+    </div>
 
-    <label for="appet">Appetite</label><br>
-    <select name="appet" id="appet">
-      <option value="good">good</option>
-      <option value="poor">poor</option>
-    </select><br>
+    <div id="buDiv">
+      <label for="bu">Blood Urea</label>
+      <input type="number" id="bu" name="bu" min="0" max="2^32 -1">
+    </div>
 
-    <label for="pe">Pedal Edema</label><br>
-    <select name="pe" id="pe">
-      <option value="yes">yes</option>
-      <option value="no">no</option>
-    </select><br>
+    <div id="scDiv">
+      <label for="sc">Serum Creatinine</label>
+      <input type="number" id="sc" name="sc" min="0" max="2^32 -1">
+    </div>
 
-    <label for="ane">Anemia</label><br>
-    <select name="ane" id="ane">
-      <option value="yes">yes</option>
-      <option value="no">no</option>
-    </select><br>
+    <div id="sodDiv">
+      <label for="sod">Sodium</label>
+      <input type="number" id="sod" name="sod" min="0" max="2^32 -1">
+    </div>
 
-    <label for="rc">Red Blood Cell Count</label><br>
-    <input type="number" id="rc" name="rc" min="0" max="2^32 -1"><br>
+    <div id="hemoDiv">
+      <label for="hemo">Hemoglobin</label>
+      <input type="number" id="hemo" name="hemo" min="0" max="2^32 -1">
+    </div>
 
-    <label for="wc">White Blood Cell Count</label><br>
-    <input type="number" id="age" name="age" min="0" max="2^32 -1"><br>
+    <div id="pcvDiv">
+      <label for="pcv">Packed cell volume</label>
+      <input type="number" id="pcv" name="pcv" min="0" max="2^32 -1">
+    </div>
+  </form>
 
-
-    <label for="bp">Blood Pressure</label><br>
-    <input type="number" id="bp" name="bp" min="0" max="2^32 -1"><br>
-
-    <label for="sg">Specific Gravity</label><br>
-    <select name="sg" id="sg">
-      <option value="1.005">1.005</option>
-      <option value="1.010">1.010</option>
-      <option value="1.015">1.015</option>
-      <option value="1.020">1.020</option>
-      <option value="1.025">1.025</option>
-    </select><br>
-
-    <label for="al">Albumin</label><br>
-    <input type="number" id="al" name="al" min="0" max="2^32 -1"><br>
-
-    <label for="su">Sugar</label><br>
-    <input type="number" id="su" name="su" min="0" max="2^32 -1"><br>
-
-
-    <label for="age">Age</label><br>
-    <input type="number" id="age" name="age" min="0" max="2^32 -1"><br>
-
-    <label for="bgr">Blood Glucose Random</label><br>
-    <input type="number" id="bgr" name="bgr" min="0" max="2^32 -1"><br>
-
-    <label for="bu">Blood Urea</label><br>
-    <input type="number" id="bu" name="bu" min="0" max="2^32 -1"><br>
-
-    <label for="sc">Serum Creatinine</label><br>
-    <input type="number" id="sc" name="sc" min="0" max="2^32 -1"><br>
-
-    <label for="sod">Sodium</label><br>
-    <input type="number" id="sod" name="sod" min="0" max="2^32 -1"><br>
-
-    <label for="hemo">Hemoglobin</label><br>
-    <input type="number" id="hemo" name="hemo" min="0" max="2^32 -1"><br>
-
-    <label for="pcv">Packed cell volume</label><br>
-    <input type="number" id="pcv" name="pcv" min="0" max="2^32 -1"><br>
-
-
-
-  </form><br><br>
-
-  <button type="submit" form="form6" value="Submit">Predict</button>
+  <div id="BtnDiv">
+    <button id="submitBtn" type="submit" form="form6" value="Submit">Predict</button>
+  </div>
 </body>
 
 </html>

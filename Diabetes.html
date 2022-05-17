@@ -1,41 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Diabetes</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-	<div>
-		<h1> <strong> Diabetes </strong></h1>
-	</div>
+  <div id="header">
+    <h1>Diabetes</h1>
+  </div>
 
-	<form>
-  <label for="Glu">Glucose level</label><br>
-  <input type="number" id="Glu" name="Glu" min="0" max="2^32 -1"><br>
+  <form id="diabetesForm">
 
-  <label for="Ins">Insulin level </label><br>
-  <input type="number" id="Ins" name="Ins" min="0" max="2^32 -1"><br>
+    <div id="glucoseDiv">
+      <label for="Glu">Glucose level</label>
+      <input type="number" id="Glu" name="Glu" min="0" max="2^32 -1">
+    </div>
 
-  <label for="BMI">BMI</label><br>
-  <input type="number" id="BMI" name="BMI" min="0" max="2^32 -1"><br>
+    <div id="insulinDiv">
+      <label for="Ins">Insulin level </label>
+      <input type="number" id="Ins" name="Ins" min="0" max="2^32 -1">
+    </div>
 
-  <label for="Skin">Skin Thickness</label><br>
-  <input type="number" id="Skin" name="Skin" min="0" max="2^32 -1"><br>
+    <div id="bmiDiv">
+      <label for="BMI">BMI</label>
+      <input type="number" id="BMI" name="BMI" min="0" max="2^32 -1">
+    </div>
 
-  <label for="Age">Age</label><br>
-  <input type="number" id="Age" name="Age" min="0" max="2^32 -1"><br>
+    <div id="skinDiv">
+      <label for="Skin">Skin Thickness</label>
+      <input type="number" id="Skin" name="Skin" min="0" max="2^32 -1">
+    </div>
 
-  <label for="Preg">Pregnancy</label><br>
-  <input type="number" id="Preg" name="Preg" min="0" max="2^32 -1"><br>
+    <div id="ageDiv">
+      <label for="Age">Age</label>
+      <input type="number" id="Age" name="Age" min="0" max="2^32 -1">
+    </div>
 
-  <label for="Diabet">Diabetic Pedigree Function Value</label><br>
-  <input type="number" id="Diabet" name="Diabet" min="0" max="2^32 -1"><br>
+    <div id="pregDiv">
+      <label for="Preg">Pregnancy</label>
+      <input type="number" id="Preg" name="Preg" min="0" max="2^32 -1">
+    </div>
 
-  <label for="bp">Diastolic Blood Pressure level</label><br>
-  <input type="number" id="bp" name="bp" min="0" max="2^32 -1"><br>
+    <div id="diabetDiv">
+      <label for="Diabet">Diabetic Pedigree Function Value</label>
+      <input type="number" id="Diabet" name="Diabet" min="0" max="2^32 -1">
+    </div>
 
-  
-</form><br><br>
+    <div id="bpDiv">
+      <label for="bp">Diastolic Blood Pressure level</label>
+      <input type="number" id="bp" name="bp" min="0" max="2^32 -1">
+    </div>
 
-<button type="submit" form="form1" value="Submit">Predict</button>
+  </form>
+
+  <div id="BtnDiv">
+    <button id="submitBtn" type="submit" form="form1" value="Submit">Predict</button>
+  </div>
 </body>
+
 </html>

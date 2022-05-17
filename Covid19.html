@@ -1,93 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COVID 19</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div>
-    <h1> <strong> Covid 19 </strong></h1>
+  <div id="header">
+    <h1>Covid 19</h1>
   </div>
   <form>
-    <label for="age">Age</label><br>
-    <input type="number" id="age" name="age" min="0" max="2^32 -1"><br>
+    <div id="ageDiv">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="0" max="2^32 -1">
+    </div>
 
-    <label for="days_onset">Days onset to admission</label><br>
-    <input type="number" id="days_onset" name="days_onset" min="0" max="2^32 -1"><br>
+    <div id="days_onset_div">
+      <label for="days_onset">Days onset to admission</label>
+      <input type="number" id="days_onset" name="days_onset" min="0" max="2^32 -1">
+    </div>
 
-    <label for="sex_male">Sex</label><br>
+    <div id="sex_div">
+      <label for="sex_male">Sex</label>
+      <select>
+        <option value="1"> Male
+        </option>
+        <option value="0"> Female
+        </option>
+      </select>
+    </div>
 
-    <select>
-      <option value="1"> Male
-      </option>
-      <option value="0"> Female
-      </option>
-    </select><br>
     <!-- <input type="number" id="sex_male" name="sex_male"><br> -->
+    <div id="cough_div">
+      <label for="cough_yes">Do you have Cough</label>
+      <!-- <input type="number" id="cough_yes" name="cough_yes"><br> -->
+      <select>
+        <option value="1"> Yes
+        </option>
+        <option value="0"> No
+        </option>
+      </select>
+    </div>
 
-    <label for="cough_yes">Do you have Cough</label><br>
-    <!-- <input type="number" id="cough_yes" name="cough_yes"><br> -->
-    <select>
-      <option value="1"> Yes
-      </option>
-      <option value="0"> No
-      </option>
-    </select><br>
+    <div id="fever_div">
+      <label for="fever_yes">Do you have Fever</label>
+      <!-- <input type="number" id="fever_yes" name="fever_yes"><br> -->
+      <select>
+        <option value="1"> Yes
+        </option>
+        <option value="0"> No
+        </option>
+      </select>
+    </div>
 
-    <label for="fever_yes">Do you have Fever</label><br>
-    <!-- <input type="number" id="fever_yes" name="fever_yes"><br> -->
-    <select>
-      <option value="1"> Yes
-      </option>
-      <option value="0"> No
-      </option>
-    </select><br>
+    <div id="chills_div">
+      <label for="chills_yes">Do you have Chills</label>
+      <!-- <input type="number" id="chills_yes" name="chills_yes"><br> -->
+      <select>
+        <option value="1"> Yes
+        </option>
+        <option value="0"> No
+        </option>
+      </select>
+    </div>
 
-    <label for="chills_yes">Do you have Chills</label><br>
-    <!-- <input type="number" id="chills_yes" name="chills_yes"><br> -->
-    <select>
-      <option value="1"> Yes
-      </option>
-      <option value="0"> No
-      </option>
-    </select><br>
+    <div id="sore_throat_div">
+      <label for="sore_throat_yes">Do you have Sore Throat</label>
+      <!-- <input type="number" id="sore_throat_yes" name="sore_throat_yes"><br> -->
+      <select>
+        <option value="1"> Yes
+        </option>
+        <option value="0"> No
+        </option>
+      </select>
+    </div>
 
-    <label for="sore_throat_yes">Do you have Sore Throat</label><br>
-    <!-- <input type="number" id="sore_throat_yes" name="sore_throat_yes"><br> -->
-    <select>
-      <option value="1"> Yes
-      </option>
-      <option value="0"> No
-      </option>
-    </select><br>
+    <div id="headache_div">
+      <label for="headche_yes">Do you have Headache</label>
+      <!-- <input type="number" id="headche_yes" name="headche_yes"><br> -->
+      <select>
+        <option value="1"> Yes
+        </option>
+        <option value="0"> No
+        </option>
+      </select>
+    </div>
 
-    <label for="headche_yes">Do you have Headache</label><br>
-    <!-- <input type="number" id="headche_yes" name="headche_yes"><br> -->
-    <select>
-      <option value="1"> Yes
-      </option>
-      <option value="0"> No
-      </option>
-    </select><br>
+    <div id="fatigue_div">
+      <label for="fatigue_yes">Do you have Fatigue?</label>
+      <!-- <input type="number" id="fatigue_yes" name="fatigue_yes"><br> -->
+      <select>
+        <option value="1"> Yes
+        </option>
+        <option value="0"> No
+        </option>
+      </select>
+    </div>
 
-    <label for="fatigue_yes">Do you have Fatigue</label><br>
-    <!-- <input type="number" id="fatigue_yes" name="fatigue_yes"><br> -->
-    <select>
-      <option value="1"> Yes
-      </option>
-      <option value="0"> No
-      </option>
-    </select><br>
+    <div id="country_div">
+      <label for="country_others">Country</label>
+      <input type="text" id="country_others" name="country_others">
+    </div>
 
-    <label for="country_others">Country</label><br>
-    <input type="text" id="country_others" name="country_others"><br>
+  </form>
 
-
-
-  </form><br><br>
-
-  <button type="submit" form="form3" value="Submit">Predict</button>
+  <div id="BtnDiv">
+    <button id="submitBtn" type="submit" form="form3" value="Submit">Predict</button>
+  </div>
 </body>
 
 </html>

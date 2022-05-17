@@ -1,48 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Breast Cancer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Breast Cancer Prediction</title>
 </head>
+
 <body>
-	<div>
-		<h1> <strong> Breast Cancer Prediction </strong></h1>
-	</div>
-	<form>
-  <label for="pm">Perimeter</label><br>
-  <input type="number" id="pm" name="pm" min="0" max="2^32 -1"><br>
+  <div id="header">
+    <h1>Breast Cancer Prediction</h1>
+  </div>
 
-  <label for="as1">Area</label><br>
-  <input type="number" id="as1" name="as1" min="0" max="2^32 -1"><br>
+  <form id="cancerFrom">
 
-  <label for="cpm">Concave Points Mean</label><br>
-  <input type="number" id="cpm" name="cpm" min="0" max="2^32 -1"><br>
+    <div id="pmDiv">
+      <label for="pm">Perimeter</label>
+      <input type="number" id="pm" name="pm" min="0" max="2^32 -1">
+    </div>
 
-  <label for="cm">Concavity Mean</label><br>
-  <input type="number" id="cm" name="cm" min="0" max="2^32 -1"><br>
+    <div id="as1Div">
+      <label for="as1">Area</label>
+      <input type="number" id="as1" name="as1" min="0" max="2^32 -1">
+    </div>
 
-  <label for="cpw">Concave points worst</label><br>
-  <input type="number" id="cpw" name="cpw" min="0" max="2^32 -1"><br>
+    <div id="cpmDiv">
+      <label for="cpm">Concave Points Mean</label>
+      <input type="number" id="cpm" name="cpm" min="0" max="2^32 -1">
+    </div>
 
-  <label for="cm1">Compactness mean</label><br>
-  <input type="number" id="cm1" name="cm1" min="0" max="2^32 -1"><br>
+    <div id="cmDiv">
+      <label for="cm">Concavity Mean</label>
+      <input type="number" id="cm" name="cm" min="0" max="2^32 -1">
+    </div>
 
-  <label for="cw">Compactness worst</label><br>
-  <input type="number" id="cw" name="cw" min="0" max="2^32 -1"><br>
+    <div id="cpwDiv">
+      <label for="cpw">Concave points worst</label>
+      <input type="number" id="cpw" name="cpw" min="0" max="2^32 -1">
+    </div>
 
-  <label for="tw">Texture worst</label><br>
-  <input type="number" id="tw" name="tw" min="0" max="2^32 -1"><br>
+    <div id="cm1Div">
+      <label for="cm1">Compactness mean</label>
+      <input type="number" id="cm1" name="cm1" min="0" max="2^32 -1">
+    </div>
 
-  <label for="tm">Texture Mean</label><br>
-  <input type="number" id="tm" name="tm" min="0" max="2^32 -1"><br>
+    <div id="cwDiv">
+      <label for="cw">Compactness worst</label>
+      <input type="number" id="cw" name="cw" min="0" max="2^32 -1">
+    </div>
 
-  <label for="cps">Concave points SE</label><br>
-  <input type="number" id="cps" name="cps" min="0" max="2^32 -1"><br>
+    <div id="twDiv">
+      <label for="tw">Texture worst</label>
+      <input type="number" id="tw" name="tw" min="0" max="2^32 -1">
+    </div>
 
-  <label for="sw">Smoothness worst</label><br>
-  <input type="number" id="sw" name="sw" min="0" max="2^32 -1"><br>
+    <div id="tmDiv">
+      <label for="tm">Texture Mean</label>
+      <input type="number" id="tm" name="tm" min="0" max="2^32 -1">
+    </div>
 
-</form><br><br>
+    <div id="cpsDiv">
+      <label for="cps">Concave points SE</label>
+      <input type="number" id="cps" name="cps" min="0" max="2^32 -1">
+    </div>
 
-<button type="submit" form="form2" value="Submit">Predict</button>
+    <div id="swDiv">
+      <label for="sw">Smoothness worst</label>
+      <input type="number" id="sw" name="sw" min="0" max="2^32 -1">
+    </div>
+  </form>
+
+  <div id="BtnDiv">
+    <button id="submitBtn" type="submit" form="form2" value="Submit">Predict</button>
+  </div>
 </body>
+
 </html>
