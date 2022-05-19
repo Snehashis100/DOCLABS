@@ -1,4 +1,39 @@
 body{
+
+	background: url("henu.jpg");
+	background-size: cover;
+	
+    background-repeat: no-repeat;
+    
 	text-align: center;
-	align-content: center;
+	margin-top:0;
+	margin-right: 38px;
+	
+}
+
+h1{
+	background-color: rgb(140, 192, 222);
+	font-size: 50px;
+	text-align: center;
+ 	font-family: consolas;
+	border: 2px solid #73AD21;
+	border-radius: 25px;
+
+}
+
+p{
+  font-size: 40px;
+  font-family: Brush Script MT;
+  background-color: rgb(250, 240, 215);
+  border: 2px solid #80ced6;
+  border-radius: 10px;
+}
+
+img{
+	
+	transition: all 1s;
+}
+
+img:hover{
+	transform: scale(1.2);
 }
