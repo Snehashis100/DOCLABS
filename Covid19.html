@@ -13,7 +13,8 @@
   <div id="header">
     <h1>Covid 19</h1>
   </div>
-  <form>
+  <form action="demo_model.py" method="post">
+
     <div id="ageDiv">
       <label for="age">Age</label>
       <input type="number" id="age" name="age" min="0" max="2^32 -1">
@@ -26,7 +27,9 @@
 
     <div id="sex_div">
       <label for="sex_male">Sex</label>
-      <select>
+
+      <select name="sex" id="sex">
+
         <option value="1"> Male
         </option>
         <option value="0"> Female
@@ -38,7 +41,7 @@
     <div id="cough_div">
       <label for="cough_yes">Do you have Cough</label>
       <!-- <input type="number" id="cough_yes" name="cough_yes"><br> -->
-      <select>
+      <select name="cough" id="cough">
         <option value="1"> Yes
         </option>
         <option value="0"> No
@@ -49,7 +52,7 @@
     <div id="fever_div">
       <label for="fever_yes">Do you have Fever</label>
       <!-- <input type="number" id="fever_yes" name="fever_yes"><br> -->
-      <select>
+      <select name="fever" id="fever">
         <option value="1"> Yes
         </option>
         <option value="0"> No
@@ -60,7 +63,7 @@
     <div id="chills_div">
       <label for="chills_yes">Do you have Chills</label>
       <!-- <input type="number" id="chills_yes" name="chills_yes"><br> -->
-      <select>
+      <select name="chills" id="chills">
         <option value="1"> Yes
         </option>
         <option value="0"> No
@@ -71,7 +74,7 @@
     <div id="sore_throat_div">
       <label for="sore_throat_yes">Do you have Sore Throat</label>
       <!-- <input type="number" id="sore_throat_yes" name="sore_throat_yes"><br> -->
-      <select>
+      <select name="sore_throat" id="sore_throat">
         <option value="1"> Yes
         </option>
         <option value="0"> No
@@ -82,7 +85,7 @@
     <div id="headache_div">
       <label for="headche_yes">Do you have Headache</label>
       <!-- <input type="number" id="headche_yes" name="headche_yes"><br> -->
-      <select>
+      <select name="headache" id="headache">
         <option value="1"> Yes
         </option>
         <option value="0"> No
@@ -93,7 +96,7 @@
     <div id="fatigue_div">
       <label for="fatigue_yes">Do you have Fatigue?</label>
       <!-- <input type="number" id="fatigue_yes" name="fatigue_yes"><br> -->
-      <select>
+      <select name="fatigue" id="fatigue">
         <option value="1"> Yes
         </option>
         <option value="0"> No
@@ -112,5 +115,7 @@
     <button id="submitBtn" type="submit" form="form3" value="Submit">Predict</button>
   </div>
 </body>
+
+<script src="covid19_scripts.js"></script>
 
 </html>
